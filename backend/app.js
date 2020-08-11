@@ -28,10 +28,14 @@ const debug = require("debug")(
 
 const app = express();
 
-app.use (
+app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:3000", "https://iron-space.netlify.app","https://iron-space.herokuapp.com"], //Swap this with the client url
+    origin: [
+      "http://localhost:3000",
+      "https://social-space.netlify.app",
+      "https://social-space.herokuapp.com",
+    ], //Swap this with the client url
   })
 );
 
